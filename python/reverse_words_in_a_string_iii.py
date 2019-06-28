@@ -7,11 +7,12 @@ class Solution(object):
         arr = ''
         for i in s.split(' '):
             arr += self.reverse(i) + ' '
-        return arr[:len(arr)-1]
+        return arr[:len(arr) - 1]
 
     def reverse(self, s):
         """
         :type s: str
+        :rtype: str
         """
         result = ''
         sLen = len(s)

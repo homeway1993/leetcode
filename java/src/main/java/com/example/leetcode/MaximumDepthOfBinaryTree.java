@@ -1,5 +1,7 @@
 package com.example.leetcode;
 
+import com.example.leetcode.definition.TreeNode;
+
 public class MaximumDepthOfBinaryTree {
 
     public int maxDepth(TreeNode root) {
@@ -23,15 +25,5 @@ public class MaximumDepthOfBinaryTree {
         }
 
         return leftDepth > rightDepth ? leftDepth : rightDepth;
-    }
-
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }

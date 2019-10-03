@@ -1,5 +1,7 @@
 package com.example.leetcode;
 
+import com.example.leetcode.definition.TreeNode;
+
 class MergeTwoBinaryTrees {
 
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
@@ -36,19 +38,5 @@ class MergeTwoBinaryTrees {
         }
 
         return result;
-    }
-
-
-    /**
-     * Definition for a binary tree node.
-     */
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }

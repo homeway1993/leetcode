@@ -1,5 +1,6 @@
 package com.example.leetcode;
 
+import com.example.leetcode.definition.TreeNode;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -11,11 +12,11 @@ public class MaximumDepthOfBinaryTreeTest {
     @Test
     public void test() {
         // prepare
-        MaximumDepthOfBinaryTree.TreeNode root = new MaximumDepthOfBinaryTree.TreeNode(3) {{
-            this.left = new MaximumDepthOfBinaryTree.TreeNode(9);
-            this.right = new MaximumDepthOfBinaryTree.TreeNode(20) {{
-                this.left = new MaximumDepthOfBinaryTree.TreeNode(15);
-                this.right = new MaximumDepthOfBinaryTree.TreeNode(7);
+        TreeNode root = new TreeNode(3) {{
+            this.left = new TreeNode(9);
+            this.right = new TreeNode(20) {{
+                this.left = new TreeNode(15);
+                this.right = new TreeNode(7);
             }};
         }};
 

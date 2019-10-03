@@ -1,5 +1,7 @@
 package com.example.leetcode;
 
+import com.example.leetcode.definition.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,15 +28,5 @@ public class LeafSimilarTrees {
         }
 
         return sequence;
-    }
-
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }

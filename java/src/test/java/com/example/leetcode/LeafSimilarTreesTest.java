@@ -1,5 +1,6 @@
 package com.example.leetcode;
 
+import com.example.leetcode.definition.TreeNode;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -11,30 +12,30 @@ public class LeafSimilarTreesTest {
     @Test
     public void test() {
         // prepare
-        LeafSimilarTrees.TreeNode root1 = new LeafSimilarTrees.TreeNode(3) {{
-            this.left = new LeafSimilarTrees.TreeNode(5) {{
-                this.left = new LeafSimilarTrees.TreeNode(6);
-                this.right = new LeafSimilarTrees.TreeNode(2) {{
-                    this.left = new LeafSimilarTrees.TreeNode(7);
-                    this.right = new LeafSimilarTrees.TreeNode(4);
+        TreeNode root1 = new TreeNode(3) {{
+            this.left = new TreeNode(5) {{
+                this.left = new TreeNode(6);
+                this.right = new TreeNode(2) {{
+                    this.left = new TreeNode(7);
+                    this.right = new TreeNode(4);
                 }};
             }};
-            this.right = new LeafSimilarTrees.TreeNode(1) {{
-                this.left = new LeafSimilarTrees.TreeNode(9);
-                this.right = new LeafSimilarTrees.TreeNode(8);
+            this.right = new TreeNode(1) {{
+                this.left = new TreeNode(9);
+                this.right = new TreeNode(8);
             }};
         }};
 
-        LeafSimilarTrees.TreeNode root2 = new LeafSimilarTrees.TreeNode(3) {{
-            this.left = new LeafSimilarTrees.TreeNode(1) {{
-                this.left = new LeafSimilarTrees.TreeNode(6);
-                this.right = new LeafSimilarTrees.TreeNode(7);
+        TreeNode root2 = new TreeNode(3) {{
+            this.left = new TreeNode(1) {{
+                this.left = new TreeNode(6);
+                this.right = new TreeNode(7);
             }};
-            this.right = new LeafSimilarTrees.TreeNode(5) {{
-                this.left = new LeafSimilarTrees.TreeNode(4);
-                this.right = new LeafSimilarTrees.TreeNode(2) {{
-                    this.left = new LeafSimilarTrees.TreeNode(9);
-                    this.right = new LeafSimilarTrees.TreeNode(8);
+            this.right = new TreeNode(5) {{
+                this.left = new TreeNode(4);
+                this.right = new TreeNode(2) {{
+                    this.left = new TreeNode(9);
+                    this.right = new TreeNode(8);
                 }};
             }};
         }};
@@ -47,17 +48,17 @@ public class LeafSimilarTreesTest {
     @Test
     public void test1() {
         // prepare
-        LeafSimilarTrees.TreeNode root1 = new LeafSimilarTrees.TreeNode(3) {{
-            this.left = new LeafSimilarTrees.TreeNode(5);
-            this.right = new LeafSimilarTrees.TreeNode(1) {{
-                this.left = new LeafSimilarTrees.TreeNode(9);
-                this.right = new LeafSimilarTrees.TreeNode(8);
+        TreeNode root1 = new TreeNode(3) {{
+            this.left = new TreeNode(5);
+            this.right = new TreeNode(1) {{
+                this.left = new TreeNode(9);
+                this.right = new TreeNode(8);
             }};
         }};
 
-        LeafSimilarTrees.TreeNode root2 = new LeafSimilarTrees.TreeNode(3) {{
-            this.left = new LeafSimilarTrees.TreeNode(5);
-            this.right = new LeafSimilarTrees.TreeNode(1);
+        TreeNode root2 = new TreeNode(3) {{
+            this.left = new TreeNode(5);
+            this.right = new TreeNode(1);
         }};
 
         // validate
